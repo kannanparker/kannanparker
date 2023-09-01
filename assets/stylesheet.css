@@ -1272,15 +1272,28 @@ audio {
 	display: none;
 }
 .message p {
-	font-family: 'Signika', sans-serif;
-	font-size: 30px;
+	font-family: 'Playfair Display', serif;
+  	font-size: 36px; /* Increased font size for more impact */
 	text-transform: uppercase;
-	color: #C4515C;
-	text-shadow: 2px 2px 2px #FFF;
-	display: none;
+	color: #FFF; /* Changed text color to a vibrant red */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Increased text shadow for depth */
 	font-weight: bold;
 	text-align: center;
-}
+	display: none;
+	padding: 10px 20px; /* Added padding for button-like appearance */
+	background-color: #FF6B6B; /* Added background color for button-like appearance #F9D4D4*/
+	border: 2px solid #FF6B6B; /* Added a border for button-like appearance */
+	border-radius: 10px; /* Rounded corners for a softer look */
+	cursor: pointer; /* Cursor changes to pointer on hover */
+	transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+	}
+
+.message p:hover {
+	color: #FFF; /* Text color changes to white on hover */
+	background-color: #F9D4D4; /* Background color changes on hover */
+}	
+
+
 .message p img{
 	display: block;
 	max-width: 80%;
@@ -1291,13 +1304,21 @@ audio {
 }
 
 .btn-primary {
-        border-color: #466baf;
-        padding: 10px;
         text-transform: uppercase;
-        font-family: 'Signika', sans-serif;
-        font-weight: 700;
-        color: #fff;
-        background-color: #466baf;
+        font-family: 'Montserrat', sans-serif;
+		background-color: #FF5733; /* Background color */
+		color: #FFFFFF; /* Text color */
+		border: none;
+		padding: 10px 20px;
+		border-radius: 5px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		font-weight: bold;
+		margin: 10px 2px;
+		cursor: pointer;
+		
 }
     .btn-primary:hover,
     .btn-primary:focus,
@@ -1306,5 +1327,5 @@ audio {
     .open .dropdown-toggle.btn-primary {
         border-color: #fff;
         color: #fff;
-        background-color: #466baf;
+        background-color: #FF8142;
     }
